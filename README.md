@@ -3,13 +3,17 @@
       Alberto Melián Rodríguez y Federico Colleluori
           
 ### Introduccion 
-En esta práctica el objetivo ha sido crear una red neuronal convolutiva capaz de 
-clasificar un conjunto de datos determinados. Se ha escogido un conjunto de datos 
-proveniente de Kaggle1
-, que originalmente consistía en una serie de 26 tipos de bolas 
-diferentes. Se han escogido 5 clases de estas: bolas de béisbol, pelotas de baloncesto, 
+<p><i>En este trabajo el <b>objetivo</b> ha sido crear una RED NEURONAL CONVOLUTIVA capaz de 
+      clasificar un conjunto de datos determinados. </i></p>
+<hr>
+<p>Se ha escogido un conjunto de datos proveniente de Kaggle1, que originalmente consistía en una serie de 26 tipos de bolas 
+diferentes.</p> 
+
+<p>Se han escogido 5 clases de estas: bolas de béisbol, pelotas de baloncesto, 
 pelotas de playa, bolas de billar y bolas de bolos. Además hay otro conjunto distinto para 
-verificación. Cada clase tiene en torno a 110 elementos, a los que además se les aplica 
+verificación.</p>
+
+<p>&nbsp Cada clase tiene en torno a 110 elementos, a los que además se les aplica 
 Data Augmentation, consistente en cambiar las características de cada imagen 
 (rotándolas, cambiando su brillo…) para obtener lo que esencialmente son nuevos 
 elementos sin mayor esfuerzo, siendo además una buena técnica para evitar el 
@@ -18,8 +22,8 @@ que “se aprenda las posibilidades de memoria”. Como función de activación 
 neuronas utilizaremos la función relu, que es sencillamente 𝑟𝑒𝑙𝑢(𝑥) = 𝑥 ·
 𝑠𝑖𝑔𝑛(𝑥)+1
 2
-. Por 
-su parte, la función de salida que emplearemos es la softmax, que es 𝑠𝑜𝑓𝑡𝑚𝑎𝑥(𝑥𝑖
+.</p>
+<p>&nbsp Por su parte, la función de salida que emplearemos es la softmax, que es 𝑠𝑜𝑓𝑡𝑚𝑎𝑥(𝑥𝑖
 ) =
 𝑒
 𝑥𝑖
@@ -30,9 +34,10 @@ su parte, la función de salida que emplearemos es la softmax, que es 𝑠𝑜�
 el softmax, como función de pérdida usaremos la entropía categórica cruzada: 𝑑(𝑦, 𝑦̂) =
 − ∑𝑖 𝑦𝑖
 · 𝑙𝑜𝑔(𝑦̂𝑖
-).
-Antes de analizar resultados probaremos varias configuraciones de 
+).</p>
+
+<p>&nbsp Antes de analizar resultados probaremos varias configuraciones de 
 hiperparámetros de la red y nos quedaremos con la mejor. Después graficaremos la 
 evolución de la precisión y mostraremos la matriz de confusión para analizar los 
-resultados.
+resultados.</p>
 
