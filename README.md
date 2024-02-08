@@ -1,4 +1,4 @@
-# Neural-network-balls-clasificacion
+# Neural-network-balloons-clasificacion
 ## Redes Neuronales
       Alberto Melián Rodríguez y Federico Colleluori
           
